@@ -1,0 +1,24 @@
+{
+  "name": "webdevelopment-1-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass scss/main.scss css/style.css -w"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulomczcoelho/WebDevelopment-1-Final-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulomczcoelho/WebDevelopment-1-Final-Project/issues"
+  },
+  "homepage": "https://github.com/paulomczcoelho/WebDevelopment-1-Final-Project#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
