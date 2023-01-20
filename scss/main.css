@@ -580,8 +580,8 @@ footer .icons-footer .icon-facebook {
     background-color: rgba(0, 255, 255, 0);
   }
   section.welcome .container-welcome .welcome-infor {
-    max-width: 54vw;
-    height: 475px;
+    max-width: 50vw;
+    height: 360px;
     flex: 1;
     background-color: #FAF8F1;
     padding: 20px;
@@ -589,7 +589,7 @@ footer .icons-footer .icon-facebook {
     text-align: center;
   }
   section.welcome .container-welcome .welcome-infor h2 {
-    margin: 75px 0 50px 0;
+    margin: 35px 0 50px 0;
     font-size: 40px;
     letter-spacing: 4px;
     transform: scaleY(0.8);
