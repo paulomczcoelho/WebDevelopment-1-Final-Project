@@ -72,6 +72,60 @@ header{
 .menu-btn:after{
   transform: translateY(8px);
 }
+
+////////////////////////////////////////////
+.menu-btnx{
+    display: none;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    /*left: 20px; */
+    top: 18px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    /*color: #fff;*/
+    /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+    transition: all 0.3s ease-in-out;
+}
+.menu-btnx span,
+.menu-btnx:before,
+.menu-btnx:after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid #000;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btnx:before{
+  transform: translateY(-8px);
+}
+.menu-btnx:after{
+  transform: translateY(8px);
+}
+
+
+
+#active:checked + .menu-btnx span {
+    transform: scaleX(0);
+}
+#active:checked + .menu-btnx:before {
+    transform: rotate(45deg);
+  border-color: #fff;
+}
+#active:checked + .menu-btnx:after {
+    transform: rotate(-45deg);
+  border-color: #fff;
+}
+////////////////////////////////////////////////
 .close {
     z-index: 1;
     width: 100%;
@@ -79,7 +133,6 @@ header{
     pointer-events: none;
     transition: background .6s;
 }
-
 /* closing animation */
 #active:checked + .menu-btn span {
     transform: scaleX(0);
@@ -165,7 +218,6 @@ input[type="checkbox"]{
   font-size: 35px;
   font-weight: 600;
 }
-
 #active:checked ~ .wrapper ul li a{
   opacity: 1;
 }
@@ -327,6 +379,10 @@ section.about-us{
             letter-spacing: 2px;
             font-weight: bold;
         }
+        .btn-about:hover{
+            background-color: #2D7276;
+            color:#FAF8F1
+        }
         .img-about{
             background:url("https://static.wixstatic.com/media/7f5b4b_7ec39fe55d4c404aafe2a6903d258d6a~mv2.jpg/v1/fill/w_1000,h_639,al_c,q_85,enc_auto/ls_view_13.jpg")no-repeat;
              background-position: 0px -73px;
@@ -396,6 +452,10 @@ section.food-menu{
                     font-size: 12px;
                     letter-spacing: 2px;
                     font-weight: bold;
+                }
+                .btn-about:hover{
+                    background-color: #2D7276;
+                    color:#FAF8F1
                 }
             }
         }

@@ -83,6 +83,61 @@ header {
   transform: translateY(8px);
 }
 
+.menu-btnx {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  /*left: 20px; */
+  top: 18px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  /*color: #fff;*/
+  /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btnx span,
+.menu-btnx:before,
+.menu-btnx:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid #000;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menu-btnx:before {
+  transform: translateY(-8px);
+}
+
+.menu-btnx:after {
+  transform: translateY(8px);
+}
+
+#active:checked + .menu-btnx span {
+  transform: scaleX(0);
+}
+
+#active:checked + .menu-btnx:before {
+  transform: rotate(45deg);
+  border-color: #fff;
+}
+
+#active:checked + .menu-btnx:after {
+  transform: rotate(-45deg);
+  border-color: #fff;
+}
+
 .close {
   z-index: 1;
   width: 100%;
@@ -365,6 +420,10 @@ section.about-us .container-about .btn-about {
   letter-spacing: 2px;
   font-weight: bold;
 }
+section.about-us .container-about .btn-about:hover {
+  background-color: #2D7276;
+  color: #FAF8F1;
+}
 section.about-us .container-about .img-about {
   background: url("https://static.wixstatic.com/media/7f5b4b_7ec39fe55d4c404aafe2a6903d258d6a~mv2.jpg/v1/fill/w_1000,h_639,al_c,q_85,enc_auto/ls_view_13.jpg") no-repeat;
   background-position: 0px -73px;
@@ -433,6 +492,10 @@ section.food-menu .container-food .food-infor .btn-container .btn-about {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
+}
+section.food-menu .container-food .food-infor .btn-container .btn-about:hover {
+  background-color: #2D7276;
+  color: #FAF8F1;
 }
 
 section.reservation {
@@ -1373,6 +1436,15 @@ footer .icons-footer .icon-facebook {
     display: block;
     top: 15px;
   }
+  .menu-btnx {
+    display: block;
+    top: 65px;
+    left: 65px;
+  }
+  .menu-btnx span, .menu-btnx:before, .menu-btnx:after {
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
+    width: 316%;
+  }
   ul.navbar-nav {
     display: none;
   }
@@ -1594,6 +1666,56 @@ footer .icons-footer .icon-facebook {
   }
   section.food-menu .container-food .food-infor .btn-container {
     max-width: 360px;
+  }
+  section.food-menu .container-food .food-infor .btn-container .nav-button {
+    background-color: #FAF8F1;
+    width: 160px;
+    height: 4.5vh;
+    margin: 15px 10px 0px 8px;
+    border: 1px solid #2D7276;
+    color: #2D7276;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  section.food-menu .container-food .food-infor .btn-container .nav-button i {
+    color: chartreuse;
+  }
+  section.food-menu .container-food .food-infor .btn-container .overlay {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 313px;
+    left: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  section.food-menu .container-food .food-infor .btn-container .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+  }
+  section.food-menu .container-food .food-infor .btn-container .overlay a:hover, section.food-menu .container-food .food-infor .btn-container .overlay a:focus {
+    color: #2D7276;
+  }
+  section.food-menu .container-food .food-infor .btn-container .overlay .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+  }
+  section.food-menu .container-food .food-infor .btn-container .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
   }
   section.food-menu .container-food .food-infor .btn-container .btn-about {
     background-color: #FAF8F1;
