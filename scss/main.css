@@ -1699,11 +1699,11 @@ footer .icons-footer .icon-facebook {
     height: 100%;
     position: fixed;
     z-index: 9;
-    top: 313px;
+    top: 75px;
     left: 0;
     overflow-x: hidden;
     transition: all 0.5s;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.96);
   }
   section.food-menu .container-food .food-infor .btn-container .overlay a {
     padding: 8px;
