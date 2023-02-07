@@ -1074,9 +1074,10 @@
         }
         >p{
             position: relative;
-            top: 46px;
+            top: 54px;
             width: 113px;
-            margin: 0 auto;
+            margin: 10px auto 0;
+            text-align: center;
         };
         .overlay-content{
             position: relative;
@@ -1090,13 +1091,18 @@
             border: 1px solid #2D7276;
             padding: 7px;
             .item-food{
-              text-align: left;
-              margin: 10px 0 0 10px;   
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0 0 10px;   
             }
             .recipe-food{
                 font-size: 9px;
                 text-align: start;
                 margin-left: 10px;
+            }
+            .border{
+                border: 2px dotted #2D7276;
+                padding: 2px;
             }
         }       
     }

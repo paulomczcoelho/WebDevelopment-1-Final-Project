@@ -1601,9 +1601,10 @@ footer .icons-footer .icon-facebook {
   }
   .overlay > p {
     position: relative;
-    top: 46px;
+    top: 54px;
     width: 113px;
-    margin: 0 auto;
+    margin: 10px auto 0;
+    text-align: center;
   }
   .overlay .overlay-content {
     position: relative;
@@ -1617,13 +1618,18 @@ footer .icons-footer .icon-facebook {
     padding: 7px;
   }
   .overlay .overlay-content .item-food {
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     margin: 10px 0 0 10px;
   }
   .overlay .overlay-content .recipe-food {
     font-size: 9px;
     text-align: start;
     margin-left: 10px;
+  }
+  .overlay .overlay-content .border {
+    border: 2px dotted #2D7276;
+    padding: 2px;
   }
   section.food-menu {
     z-index: 3337;
