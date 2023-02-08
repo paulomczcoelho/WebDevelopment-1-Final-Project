@@ -1595,9 +1595,10 @@ footer .icons-footer .icon-facebook {
   }
   .overlay .close-btn {
     position: absolute;
-    top: 0px;
-    right: 3px;
+    top: -20px;
+    right: 0px;
     font-size: 60px;
+    width: 47px;
   }
   .overlay > p {
     position: relative;
@@ -1605,6 +1606,10 @@ footer .icons-footer .icon-facebook {
     width: 113px;
     margin: 10px auto 0;
     text-align: center;
+  }
+  .overlay .logo-img-menu {
+    margin: 10px auto -37px;
+    max-width: 220px;
   }
   .overlay .overlay-content {
     position: relative;
@@ -1621,6 +1626,12 @@ footer .icons-footer .icon-facebook {
     display: flex;
     justify-content: space-between;
     margin: 10px 0 0 10px;
+  }
+  .overlay .overlay-content .item-food span {
+    margin-right: 25px;
+  }
+  .overlay .overlay-content .font-menu {
+    font-size: 12px;
   }
   .overlay .overlay-content .recipe-food {
     font-size: 9px;

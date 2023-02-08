@@ -1068,9 +1068,10 @@
         }
         .close-btn{
             position: absolute;
-            top: 0px;
-            right: 3px;
+            top: -20px;
+            right: 0px;
             font-size: 60px;
+            width: 47px;
         }
         >p{
             position: relative;
@@ -1079,6 +1080,10 @@
             margin: 10px auto 0;
             text-align: center;
         };
+        .logo-img-menu{
+            margin: 10px auto -37px;
+            max-width: 220px;
+        }
         .overlay-content{
             position: relative;
             top: 8%;
@@ -1093,8 +1098,14 @@
             .item-food{
                 display: flex;
                 justify-content: space-between;
-                margin: 10px 0 0 10px;   
+                margin: 10px 0 0 10px; 
+                span{
+                    margin-right: 25px;
+                } 
             }
+            .font-menu{
+                font-size: 12px;
+            } 
             .recipe-food{
                 font-size: 9px;
                 text-align: start;
