@@ -1045,7 +1045,7 @@
     // }
     .overlay{
         display: absolute;
-        width: 0%;
+        width: 100%;
         height: 100%;
         position: fixed;
         z-index: 999999999999;
@@ -1075,7 +1075,7 @@
         }
         >p{
             position: relative;
-            top: 54px;
+            top: 55px;
             width: 113px;
             margin: 10px auto 0;
             text-align: center;
@@ -1085,14 +1085,14 @@
             max-width: 220px;
         }
         .overlay-content{
+            display: flex;
+            flex-direction: column;
             position: relative;
             top: 8%;
             width: 95%;
             // height: 50%;
             text-align: center;
             margin:0 auto;
-            display: flex;
-            flex-direction: column;
             border: 1px solid #2D7276;
             padding: 7px;
             .item-food{
@@ -1115,8 +1115,63 @@
                 border: 2px dotted #2D7276;
                 padding: 2px;
             }
-        }       
+        }
+        p.drinks-text{
+            letter-spacing: 5px;
+            border-bottom: 2px solid #2D7276;
+            width: 92%;
+            margin-bottom: 10px;
+        }
+        .overlay-content-drinks{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 8%;
+            .item-drink{
+                width: 100%;
+                margin-bottom: 3px;
+                border-bottom: 1px dotted black;
+                letter-spacing: 1px;
+            }
+            .drink-price{
+                font-size: 9px;
+            }
+            .container-drinks{
+                display: flex;
+                justify-content: space-between;
+                
+                .drink-drink-details{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .drink{
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                }
+                .drink-details{
+                    font-size: 9px;
+                    margin-bottom: 7px;
+                }
+                .drink-place{
+                    margin-top: 7px;
+                    font-size: 8px;
+                    color: #494646;
+                    font-weight: normal;
+                    transform: rotate(-25deg);
+                }
+                .flex-column{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+           
+
+        
+        }   
+
     }
+    
     section.food-menu{
         // position: relative;
         z-index: 3337;
@@ -1160,38 +1215,38 @@
                     letter-spacing: 1px;
                     font-size: 25px;
                     transform: scaleY(0.8);
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
                 }
                 .btn-container{
                     max-width: 360px;
-                    .nav-button{
-                        background-color: #FAF8F1;
-                        width: 160px;
-                        height: 4.5vh;
-                        margin: 15px 10px 0px 8px;
-                        border: 1px solid #2D7276;
-                        color: #2D7276;
-                        font-size: 12px;
-                        letter-spacing: 2px;
-                        font-weight: bold;
-                        cursor: pointer;
-                        i{
-                            color: chartreuse;
-                        }
-                    }
-                    .btn-about{
-                        background-color: #FAF8F1;
-                        width: 160px;
-                        height: 4.5vh;
-                        margin: 15px 10px 0px 8px;
-                        border: 1px solid #2D7276;
-                        color: #2D7276;
-                        font-size: 12px;
-                        letter-spacing: 2px;
-                        font-weight: bold;
-                    }
+                    margin: 0 auto;
+                }
+               
+                .nav-button{
+                    background-color: #FAF8F1;
+                    width: 160px;
+                    height: 4.5vh;
+                    margin: 15px 10px 0px 8px;
+                    border: 1px solid #2D7276;
+                    color: #2D7276;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .btn-about{
+                    background-color: #FAF8F1;
+                    width: 160px;
+                    height: 4.5vh;
+                    margin: 15px 10px 0px 8px;
+                    border: 1px solid #2D7276;
+                    color: #2D7276;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
                 }
             }
+            
         }
     }
     section.reservation{
@@ -1262,7 +1317,6 @@
         z-index: 9;
         height: 300px;display: flex;
         flex-direction: column;
-        
         background-color: #FAF8F1;
         .container-footer{
             margin-top: 100px;
@@ -1278,7 +1332,6 @@
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-size: 14px;
             }
-            
         }
         .icons-footer {
             margin: 0 auto;

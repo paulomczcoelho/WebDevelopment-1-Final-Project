@@ -1572,7 +1572,7 @@ footer .icons-footer .icon-facebook {
   }
   .overlay {
     display: absolute;
-    width: 0%;
+    width: 100%;
     height: 100%;
     position: fixed;
     z-index: 999999999999;
@@ -1602,7 +1602,7 @@ footer .icons-footer .icon-facebook {
   }
   .overlay > p {
     position: relative;
-    top: 54px;
+    top: 55px;
     width: 113px;
     margin: 10px auto 0;
     text-align: center;
@@ -1612,13 +1612,13 @@ footer .icons-footer .icon-facebook {
     max-width: 220px;
   }
   .overlay .overlay-content {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 8%;
     width: 95%;
     text-align: center;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     border: 1px solid #2D7276;
     padding: 7px;
   }
@@ -1641,6 +1641,55 @@ footer .icons-footer .icon-facebook {
   .overlay .overlay-content .border {
     border: 2px dotted #2D7276;
     padding: 2px;
+  }
+  .overlay p.drinks-text {
+    letter-spacing: 5px;
+    border-bottom: 2px solid #2D7276;
+    width: 92%;
+    margin-bottom: 10px;
+  }
+  .overlay .overlay-content-drinks {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 8%;
+  }
+  .overlay .overlay-content-drinks .item-drink {
+    width: 100%;
+    margin-bottom: 3px;
+    border-bottom: 1px dotted black;
+    letter-spacing: 1px;
+  }
+  .overlay .overlay-content-drinks .drink-price {
+    font-size: 9px;
+  }
+  .overlay .overlay-content-drinks .container-drinks {
+    display: flex;
+    justify-content: space-between;
+  }
+  .overlay .overlay-content-drinks .container-drinks .drink-drink-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .overlay .overlay-content-drinks .container-drinks .drink {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .overlay .overlay-content-drinks .container-drinks .drink-details {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  .overlay .overlay-content-drinks .container-drinks .drink-place {
+    margin-top: 7px;
+    font-size: 8px;
+    color: #494646;
+    font-weight: normal;
+    transform: rotate(-25deg);
+  }
+  .overlay .overlay-content-drinks .container-drinks .flex-column {
+    display: flex;
+    justify-content: space-between;
   }
   section.food-menu {
     z-index: 3337;
@@ -1685,12 +1734,13 @@ footer .icons-footer .icon-facebook {
     letter-spacing: 1px;
     font-size: 25px;
     transform: scaleY(0.8);
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
   }
   section.food-menu .container-food .food-infor .btn-container {
     max-width: 360px;
+    margin: 0 auto;
   }
-  section.food-menu .container-food .food-infor .btn-container .nav-button {
+  section.food-menu .container-food .food-infor .nav-button {
     background-color: #FAF8F1;
     width: 160px;
     height: 4.5vh;
@@ -1702,10 +1752,7 @@ footer .icons-footer .icon-facebook {
     font-weight: bold;
     cursor: pointer;
   }
-  section.food-menu .container-food .food-infor .btn-container .nav-button i {
-    color: chartreuse;
-  }
-  section.food-menu .container-food .food-infor .btn-container .btn-about {
+  section.food-menu .container-food .food-infor .btn-about {
     background-color: #FAF8F1;
     width: 160px;
     height: 4.5vh;
