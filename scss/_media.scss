@@ -1119,7 +1119,7 @@
         p.drinks-text{
             letter-spacing: 5px;
             border-bottom: 2px solid #2D7276;
-            width: 92%;
+            width: 98%;
             margin-bottom: 10px;
         }
         .overlay-content-drinks{
@@ -1129,12 +1129,15 @@
             top: 8%;
             .item-drink{
                 width: 100%;
+                margin-top: 15px;
                 margin-bottom: 3px;
                 border-bottom: 1px dotted black;
                 letter-spacing: 1px;
             }
             .drink-price{
                 font-size: 9px;
+                box-sizing: border-box;
+                margin-right: 3px;
             }
             .container-drinks{
                 display: flex;
@@ -1183,6 +1186,19 @@
                 .margin-top{
                     margin-top: 45px;
                 }
+                .border-top{
+                    border-top: 1px dotted #2D7276;
+                    margin-top: 45px;
+                    margin-bottom: 7px;
+                    width: 100%;
+                }
+                .obs-text{
+                    font-size: 9px;
+                }
+                .text-center{
+                    text-align: center;
+                }
+
             }
            
 

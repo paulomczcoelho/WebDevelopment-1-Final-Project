@@ -1645,7 +1645,7 @@ footer .icons-footer .icon-facebook {
   .overlay p.drinks-text {
     letter-spacing: 5px;
     border-bottom: 2px solid #2D7276;
-    width: 92%;
+    width: 98%;
     margin-bottom: 10px;
   }
   .overlay .overlay-content-drinks {
@@ -1656,12 +1656,15 @@ footer .icons-footer .icon-facebook {
   }
   .overlay .overlay-content-drinks .item-drink {
     width: 100%;
+    margin-top: 15px;
     margin-bottom: 3px;
     border-bottom: 1px dotted black;
     letter-spacing: 1px;
   }
   .overlay .overlay-content-drinks .drink-price {
     font-size: 9px;
+    box-sizing: border-box;
+    margin-right: 3px;
   }
   .overlay .overlay-content-drinks .container-drinks {
     display: flex;
@@ -1709,6 +1712,18 @@ footer .icons-footer .icon-facebook {
   }
   .overlay .overlay-content-drinks .container-drinks .margin-top {
     margin-top: 45px;
+  }
+  .overlay .overlay-content-drinks .container-drinks .border-top {
+    border-top: 1px dotted #2D7276;
+    margin-top: 45px;
+    margin-bottom: 7px;
+    width: 100%;
+  }
+  .overlay .overlay-content-drinks .container-drinks .obs-text {
+    font-size: 9px;
+  }
+  .overlay .overlay-content-drinks .container-drinks .text-center {
+    text-align: center;
   }
   section.food-menu {
     z-index: 3337;
