@@ -1707,6 +1707,9 @@ footer .icons-footer .icon-facebook {
     font-size: 14px;
     margin-bottom: 3px;
   }
+  .overlay .overlay-content-drinks .container-drinks .margin-top {
+    margin-top: 45px;
+  }
   section.food-menu {
     z-index: 3337;
     background-color: #FAF8F1;
