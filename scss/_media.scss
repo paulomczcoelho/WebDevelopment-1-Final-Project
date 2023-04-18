@@ -1152,6 +1152,15 @@
                 .drink-details{
                     font-size: 9px;
                     margin-bottom: 7px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .drink-details-wine{
+                    margin-top: -10px;
+                    font-size: 9px;
+                    margin-bottom: 7px;
+                    display: flex;
+                    justify-content: space-between;
                 }
                 .drink-place{
                     margin-top: 7px;
@@ -1160,9 +1169,16 @@
                     font-weight: normal;
                     transform: rotate(-25deg);
                 }
+                .drink-price{
+                    letter-spacing: 1px;
+                }
                 .flex-column{
                     display: flex;
                     justify-content: space-between;
+                }
+                .wine-text{
+                    font-size: 14px;
+                    margin-bottom: 3px;
                 }
             }
            
