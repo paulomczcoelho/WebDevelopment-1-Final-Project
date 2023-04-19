@@ -1602,7 +1602,7 @@ footer .icons-footer .icon-facebook {
   }
   .overlay > p {
     position: relative;
-    top: 74px;
+    top: 65px;
     width: 113px;
     margin: 10px auto 0;
     text-align: center;
@@ -1618,7 +1618,7 @@ footer .icons-footer .icon-facebook {
     font-size: 7px;
   }
   .overlay .note-margin-top {
-    margin-top: 240px;
+    margin-top: 200px;
     width: 100%;
     font-size: 12px;
     text-align: center;
