@@ -10,3 +10,9 @@ function openNavDrinks(){
 function closeNavDrinks(){
     document.getElementById("myNavDrinks").style.width = '0%'
 }
+function openNavSpecial(){
+    document.getElementById("myNavSpecial").style.width = '100%';
+}
+function closeNavSpecial(){
+    document.getElementById("myNavSpecial").style.width = '0%'
+}

@@ -1045,7 +1045,7 @@
     // }
     .overlay{
         display: absolute;
-        width: 0;
+        width: 100%;
         height: 100%;
         position: fixed;
         z-index: 999999999999;
@@ -1075,11 +1075,27 @@
         }
         >p{
             position: relative;
-            top: 55px;
+            top: 74px;
             width: 113px;
             margin: 10px auto 0;
             text-align: center;
-        };
+        }
+        .note{
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 10px;
+            .black{
+                font-size: 7px;
+            }
+        }
+        .note-margin-top{
+            margin-top: 240px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+        }
         .logo-img-menu{
             margin: 10px auto -37px;
             max-width: 220px;
@@ -1118,7 +1134,7 @@
         }
         p.drinks-text{
             letter-spacing: 5px;
-            border-bottom: 2px solid #2D7276;
+            border-bottom: 2px solid #000000;
             width: 98%;
             margin-bottom: 10px;
         }
@@ -1131,7 +1147,7 @@
                 width: 100%;
                 margin-top: 15px;
                 margin-bottom: 3px;
-                border-bottom: 1px dotted black;
+                border-bottom: 1px dotted #2D7276;
                 letter-spacing: 1px;
             }
             .drink-price{
@@ -1200,11 +1216,40 @@
                 }
 
             }
-           
-
-        
+            
         }   
-
+        .container-speciais{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 11%;
+            
+            text-align: center;
+            
+            .margin-bottom{
+                border-bottom: 1px dotted black;
+                //margin-bottom: -10px;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+            .no-letter{
+                color: transparent;
+            }
+            .drink-details-happy{
+                font-size: 9px;
+            }
+            .margin-t1{
+                margin-top: -7px;
+            }
+            .margin-t25{
+                margin-top: 25px;
+            }
+            .margin-t35{
+                margin-top: 35px;
+            }
+           
+            
+        }
     }
     
     section.food-menu{
