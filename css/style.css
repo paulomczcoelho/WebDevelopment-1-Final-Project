@@ -1572,7 +1572,7 @@ footer .icons-footer .icon-facebook {
   }
   .overlay {
     display: absolute;
-    width: 0;
+    width: 0px;
     height: 100%;
     position: fixed;
     z-index: 999999999999;
